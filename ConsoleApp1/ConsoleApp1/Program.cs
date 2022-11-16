@@ -6,7 +6,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Enter a number");
+            string number = Console.ReadLine();
+            int numberParsed = Int16.Parse(number);
+
+            if (numberParsed < 50)
+            {
+                Console.WriteLine("Sisesta number");
+            }
+            else
+            {
+                Console.WriteLine("Kõik ülejäänud numbrid");
+            }
         }
     }
 }
